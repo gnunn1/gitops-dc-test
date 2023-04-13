@@ -1,0 +1,4 @@
+resources:
+- dc.yaml
+- svc.yaml
+- route.yaml
