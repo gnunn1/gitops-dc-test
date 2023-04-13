@@ -8,15 +8,8 @@ metadata:
     template: httpd-example
     template.openshift.io/template-instance-owner: 41033e1d-4cde-4b00-bd4c-43d89d158608
   name: httpd
-  namespace: test2
 spec:
-  clusterIP: 172.30.209.10
-  clusterIPs:
-  - 172.30.209.10
   internalTrafficPolicy: Cluster
-  ipFamilies:
-  - IPv4
-  ipFamilyPolicy: SingleStack
   ports:
   - name: web
     port: 8080

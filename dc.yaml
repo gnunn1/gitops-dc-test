@@ -7,9 +7,7 @@ metadata:
   labels:
     app: httpd-example
     template: httpd-example
-    template.openshift.io/template-instance-owner: 41033e1d-4cde-4b00-bd4c-43d89d158608
   name: httpd
-  namespace: test2
 spec:
   replicas: 1
   revisionHistoryLimit: 10
