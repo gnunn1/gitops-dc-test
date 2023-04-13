@@ -60,7 +60,11 @@ spec:
           timeoutSeconds: 3
         resources:
           limits:
-            memory: 512Mi
+            cpu: 1000m
+            memory: 1000mi
+          requests:
+            cpu: 100m
+            memory: 1Gi
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File
       dnsPolicy: ClusterFirst
