@@ -1,0 +1,17 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  annotations:
+    openshift.io/host.generated: "true"
+  labels:
+    app: httpd-example
+    template: httpd-example
+    template.openshift.io/template-instance-owner: 41033e1d-4cde-4b00-bd4c-43d89d158608
+  name: httpd
+  namespace: test2
+spec:
+  to:
+    kind: Service
+    name: httpd
+    weight: 100
+  wildcardPolicy: None
