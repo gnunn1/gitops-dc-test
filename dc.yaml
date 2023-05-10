@@ -6,7 +6,7 @@ metadata:
     template: httpd-example
   name: httpd
 spec:
-  replicas: 3
+  replicas: 1
   revisionHistoryLimit: 0
   selector:
     app: httpd
